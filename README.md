@@ -1,1 +1,3 @@
-merhablar bu benim ilk site deneyimim onur petek ankara üniversitesi bilgisayar mühendisliği
+# Portfolyo
+
+HTML ile hazırladığım kişisel tanıtım sayfam. Bilgisayar mühendisliği alanlarını denerken yaptığım projeleri burada toplayacağım.
