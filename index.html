@@ -3,91 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petek Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <title>Onur's Calculator</title>
-    <meta name="google-site-verification" content="gEJgoIN4hSFFYv0gemS169-T_NBP_mFDQAlLfI-vFsc" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔢</text></svg>">
-    <meta name="description" content="Onur Petek, Ankara Üniversitesi bilgisayar mühendisliği öğrencisi. Projeleri ve portfolyosu.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
 </head>
 <body>
-    <div class="wrapper">
-        <section class="screen">
-        0
-    
+    <div class="weather-card">
+        <h2>Petek</h2>
+        <p class="subtitle">Weather App</p>
+
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Enter city name..." aria-label="City name" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message">Search a city to see its weather</p>
+
+        <section id="weatherInfo" class="weather-info" hidden>
+            <h3 id="cityName"></h3>
+            <img id="weatherIcon" alt="Weather icon">
+            <h1 id="temperature">--°C</h1>
+            <p id="description"></p>
+
+            <div class="details">
+                <div>
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div>
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <strong id="wind">-- m/s</strong>
+                </div>
+            </div>
         </section>
 
-        <section class="calc-buttons"> 
-        
-        <div class="calc-button-row">
-            <button class="calc-button double">
-            C    
-            
-                </button>
-                <button class="calc-button">
-                    &larr;
-                </button>
-                <button class="calc-button">
-                    &divide;
-                    
-                </button>
-                </div>    
-
-                <div class="calc-button-row">  
-                    <button class="calc-button">
-                        7
-                    </button>
-                    <button class="calc-button">
-                        8
-                    </button>
-                    <button class="calc-button">
-                        9
-                    </button>
-                <button class="calc-button">
-                        &times;
-                </button>
-                </div>
-
-
-                <div class="calc-button-row">
-                    <button class="calc-button">  
-                    4 </button>
-                    <button class="calc-button">
-                        5
-                    </button>
-                    <button class="calc-button">
-                        6
-                    </button>
-                    <button class="calc-button">
-                        &minus;
-                    </button>
-                </div>
-
-                <div    class="calc-button-row">
-                    <button class="calc-button">
-                        1
-                    </button>
-                    <button class="calc-button">
-                        2
-                    </button>
-                    <button class="calc-button">
-                        3
-                    </button>
-                    <button class="calc-button">
-                        &plus;
-                    </button>
-
-                </div>
-
-                <div class="calc-button-row">
-                    <button class="calc-button double">
-                        0
-                    </button>
-                    <button class="calc-button">
-                        &equals;
-                    </button>
-
-
-        </section>
+        <footer>Made with ❤️ by Petek</footer>
     </div>
 
     <script src="script.js"></script>
